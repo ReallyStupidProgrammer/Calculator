@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             else return null
         } else {
             if (symbolIndex == 0) return null
+            if (numIndex <= 1) return null
             var current : Int = numList[--numIndex]
             while (symbolIndex > 0 && symbolList[symbolIndex - 1] > 1) {
                 current = cal[symbolList[--symbolIndex]](numList[--numIndex], current)

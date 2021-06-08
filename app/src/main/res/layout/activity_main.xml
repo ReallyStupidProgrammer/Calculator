@@ -10,10 +10,11 @@
     <TextView
         android:id="@+id/screen"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="fill_horizontal"
         android:text="0"
         android:textColor="@color/white"
-        android:gravity="fill_horizontal"
         android:textSize="30pt"
 
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,13 +23,16 @@
 
     <TextView
         android:id="@+id/answer"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="90dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"
         android:gravity="end"
         android:text=""
         android:textColor="@color/white"
         android:textSize="30pt"
 
+        app:layout_constraintBottom_toTopOf="@id/buttons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/screen" />
@@ -44,250 +48,254 @@
         <TableRow
             android:id="@+id/row1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button7"
+                style="?android:attr/buttonStyle"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                style="?android:attr/buttonStyle"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="7"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="8"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="9"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button_plus"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="+"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
         </TableRow>
 
         <TableRow
             android:id="@+id/row2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="4"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="5"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="6"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button_minus"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="-"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
         </TableRow>
 
         <TableRow
             android:id="@+id/row3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button1"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="1"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="2"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="3"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button_multiply"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="×"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
         </TableRow>
 
         <TableRow
             android:id="@+id/row4"
             android:layout_width="100dp"
-            android:layout_height="185dp">
+            android:layout_height="185dp"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button_clear"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="C"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button0"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="0"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button_equal"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="="
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
 
             <Button
                 android:id="@+id/button_divide"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:foreground="@drawable/button_style"
                 android:background="#00000000"
+                android:foreground="@drawable/button_style"
+                android:onClick="onButtonClick"
                 android:text="÷"
-                android:textSize="20pt"
-                android:onClick="onButtonClick"/>
+                android:textSize="20pt" />
         </TableRow>
     </TableLayout>
 
