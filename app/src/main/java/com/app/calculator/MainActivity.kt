@@ -98,8 +98,7 @@ class MainActivity : AppCompatActivity() {
         } else{
             var ans : Int? = calculate(true)
             var ansst : String = ""
-            if (ans == null) ansst = "Invalid Formula!"
-            else ansst = ans.toString()
+            ansst = ans?.toString() ?: "Invalid"
             answer!!.text = ansst
             isNew = true
         }
