@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     private val add = {a : Int, b : Int -> a + b}
     private val minus = {a : Int, b : Int -> a - b}
-    private val multiple = {a : Int, b : Int -> a * b}
+    private val multiply = {a : Int, b : Int -> a * b}
     private val divide = {a : Int, b : Int -> a / b}
-    private var cal : Array<(Int, Int) -> Int> = arrayOf(add, minus, multiple, divide)
+    private var cal : Array<(Int, Int) -> Int> = arrayOf(add, minus, multiply, divide)
 
     private fun calculate(lastCalc : Boolean) : Int? {
         if (lastCalc) {
