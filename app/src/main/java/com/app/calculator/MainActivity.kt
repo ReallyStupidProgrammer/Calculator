@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
             while (numIndex > 0 && symbolIndex > 0) {
                 current = cal[symbolList[--symbolIndex]](numList[--numIndex], current)
             }
-            if (numIndex == 0 && symbolIndex == 0) return current
-            else return null
+            return if (numIndex == 0 && symbolIndex == 0) current
+            else null
         } else {
             if (symbolIndex == 0) return null
             if (numIndex <= 1) return null
